@@ -1,0 +1,16 @@
+.mapContainer {
+    width: 60vw; /* Ancho deseado del contenedor */
+    height: 100vh; /* Alto deseado del contenedor */
+    overflow: hidden; /* Oculta cualquier cosa que se desborde */
+    position: relative;
+}
+
+/* Iframe del mapa */
+.mapIframe {
+    width: 100vw; /* Ancho mayor al contenedor para controlar la parte visible */
+    height: 100vh; /* Alto mayor al contenedor para controlar la parte visible */
+    border: 0;
+    position: absolute;
+    top: -80px; /* Ajusta la posición superior del iframe */
+    left: -50px; /* Ajusta la posición izquierda del iframe */
+}
