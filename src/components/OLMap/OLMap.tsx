@@ -12,6 +12,7 @@ import Vector from "ol/layer/Vector";
 import MapPin1 from "../../assets/map-pin.png";
 import MapPin2 from "../../assets/map-pin2.png";
 import Stroke from "ol/style/Stroke";
+
 interface props {
   id: string;
   sx: BoxProps["sx"];

@@ -6,9 +6,9 @@ const useLocation = () => {
   const [code, setCode] = useState<null | string>(null);
   const [coords, setCoords] = useState<null | Array<number>>(null);
 
-  const [selectedCoords, setSelectedCoords] = useState<Array<number> | null>(
-    null
-  );
+  const [selectedCoords, setSelectedCoords] = useState<
+    Array<number> | undefined
+  >(undefined);
 
   const init = () => {
     const location = locations[randomNumber(0, locations.length - 1)];
@@ -20,7 +20,7 @@ const useLocation = () => {
     init();
   }, []);
 
-  return { code, coords, selectedCoords, setSelectedCoords };
+  return { code, coords, selectedCoords, setSelectedCoords, init };
 };
 
 export default useLocation;
