@@ -12,5 +12,5 @@
     border: 0;
     position: absolute;
     top: -80px; /* Ajusta la posición superior del iframe */
-    left: -50px; /* Ajusta la posición izquierda del iframe */
+    left: 0vw; /* Ajusta la posición izquierda del iframe */
 }

@@ -100,10 +100,13 @@ function OLMap(props: props) {
 
   return (
     <Box
-      style={{ height: "auto", width: "100%" }}
+      style={{
+        height: "100%",
+        width: "100%",
+        borderRadius: "20px",
+      }}
       sx={{ ...props.sx }}
       id={props.id}
-      className="map-container"
     />
   );
 }

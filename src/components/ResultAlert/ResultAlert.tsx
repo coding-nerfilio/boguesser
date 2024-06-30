@@ -9,17 +9,6 @@ interface props {
 }
 
 const ResultAlert = (props: props) => {
-  let distance = null;
-  if (props.selectedCoords) {
-    const distance = Number(
-      Haversine(
-        props.selectedCoords![0],
-        props.selectedCoords![1],
-        props.coords[0],
-        props.coords[1]
-      ).toFixed(2)
-    );
-  }
   return (
     <Box
       sx={{
@@ -55,7 +44,13 @@ const ResultAlert = (props: props) => {
           />
           <Typography variant="h4">
             Le erraste por
-            {" " + distance}
+            {" " +
+              Haversine(
+                props.selectedCoords![0],
+                props.selectedCoords![1],
+                props.coords[0],
+                props.coords[1]
+              ).toFixed(2)}
             KM jajaja
           </Typography>
         </>
